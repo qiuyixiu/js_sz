@@ -3,54 +3,110 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>一休</title>
+    <title>js深圳小分队</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="./public/anim.css">
+
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./public/vue.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-
   <div class="main-header">
     <div class="container">
-      <h1>JavaScript编程入门</h1>
+      <h1>JavaScript深圳小分队编程入门</h1>
       <h5>授课老师：徐高阳</h5>
       <h5>
         <a href="./heartwords.html" class="glyphicon glyphicon-heart" target="_blank">同学们的心里话</a>
       </h5>
     </div>
   </div>
-  <div class="container">
-    <div class="envato-animate">
-      <span class="envato-balloon">老</span>
-      <span class="envato-balloon">师</span>
-      <span class="envato-balloon">节</span>
-      <span class="envato-balloon">日</span>
-      <span class="envato-balloon">快</span>
-      <span class="envato-balloon">乐</span>
-      <span class="envato-balloon">!</span>
-    </div>
-    <div class="col-md-12 ">
-      <div class="col-md-3 ">
-        <img src="http://oon3erbcp.bkt.clouddn.com/avata%28qiujingyu%29.png" width="200px", height="200px">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>hitchhacker</h3>
+        <p>搞定JS.</p>
       </div>
-      <div class="col-md-6 ">
-        <h3 class="glyphicon glyphicon-user">关于我</h3>
-        <p>我是丘竟钰，网名一休，微信：yixiuge0755，微信公众号：一休工作室</p>
-        <p>喜欢做手工皮具、射箭、跑步</p>
-        <p>从2017年4月正式开始学编程做网站</p>
+    </div>
+
+    <div class="item">
+      <img src="https://avatars0.githubusercontent.com/u/30835292?v=4&u=0828fdc04493f465d3a4ee0957fb8397e9c0d940&s=400" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>刁志聪</h3>
+        <p>我学习JS的心愿是，先将容易上手的JS学透，然后应用在自己的领域里，如果可能，转行编程行业，把自己的想法用编程的方式展现出来，这将会是一件非常有趣的事</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://oon3erbcp.bkt.clouddn.com/liuzc.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>刘争春</h3>
+        <p>被徐老师的超低价给吸引进来了，本来学的是python数据科学，哈哈哈！！！</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fichri1aobj30hs0bumxh.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>唐剑锋</h3>
+        <p>学习了全栈营后，觉得还要提高，所以来学，希望能学到东西</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://oon3erbcp.bkt.clouddn.com/avata%28qiujingyu%29.png" alt="New York">
+      <div class="carousel-caption">
+        <h3>丘竟钰</h3>
         <p>希望参加这个课程能让自己建立的网站更加生动活泼</p>
       </div>
-      <div id="app" class="col-md-3">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <div class="container">
+    <div class="envato-animate">
+      <span class="envato-balloon">J</span>
+      <span class="envato-balloon">S</span>
+      <span class="envato-balloon">深</span>
+      <span class="envato-balloon">圳</span>
+      <span class="envato-balloon">小</span>
+      <span class="envato-balloon">分</span>
+      <span class="envato-balloon">队</span>
+    </div>
+    <div class="col-md-12 ">
+
+      <div id="app" class="col-md-12">
           <h3 class="glyphicon glyphicon-volume-up">对老师说话</h3>
            <div><input v-model ="name" class="form-control"  placeholder="填入你的姓名"></div>
            <div><input v-model ="account" class="form-control"  placeholder="填入你的新大帐户"></div>
            <div><input v-model ="content" class="form-control"  placeholder="填入你想对老师说的话"></div>
            <!--<div> <input v-model ="file" name="file" type="file" accept="image/png,image/gif,image/jpeg" on-change="update"/></div>  -->
            <div><button v-on:click="sendData">提交给老师</button> </div>
+           <br>
       </div>
     </div>
     <br><br><br>
@@ -66,37 +122,7 @@
             <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson7/qiujingyu.md">
               第七课作业
             </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson6/qiujingyu.js">
-              第六课作业
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson5/qiujingyu.md">
-              第五课作业
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">
-              第四课作业（无作业）
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson3/qiujingyu.png">
-              第三课作业
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson2/qiujingyu.md">
-              第二课作业
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson1/qiujingyu.md">
-              第一课作业
-            </a>
-          </li>
+
         </div>
       </div>
     </div>
@@ -189,21 +215,21 @@
   <div class="main-footer">
     <div class="container">
       <div class="col-md-2">
-        一休网站作品链接
+        学习资源链接
       </div>
       <div class="col-md-3">
-          <a href="http://www.szleathercraft.com/",  target="_blank") %>
-            深圳市皮雕艺术促进会（正式作品）
+          <a href="https://developer.mozilla.org/zh-CN/",  target="_blank") %>
+            Mozilla 开发者网络
           </a>
       </div>
       <div class="col-md-3">
-          <a href="https://job-listing-yixiu.herokuapp.com/",  target="_blank") %>
-            一休工作室招聘网（学习作品）
+          <a href="http://www.bootcss.com/",  target="_blank") %>
+            Bootstrap中文网
           </a>
       </div>
       <div class="col-md-4">
-          <a href="https://yixiu2017.herokuapp.com/",  target="_blank") %>
-            一休工作室手工皮具店 (与张瑞兰合作的学习作品)
+          <a href="http://www.w3school.com.cn/",  target="_blank") %>
+            w3school
           </a>
       </div>
   </div>
