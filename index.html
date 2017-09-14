@@ -7,273 +7,330 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/style.css">
-    <link rel="stylesheet" href="./public/anim.css">
-
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./public/vue.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-  <div class="main-header">
+
+  <!--这里是cube-->
+  <div style="background-image:url(http://oon3erbcp.bkt.clouddn.com/background2.png);height:600px">
+  <br>
+    <div id="experiment">
+      <div id="cube">
+        <div class="face one" >
+            <img src="https://avatars0.githubusercontent.com/u/30835292?v=4&u=0828fdc04493f465d3a4ee0957fb8397e9c0d940&s=400"  height="98%" width="98%">
+                <div class="carousel-caption">
+                  <h3>刁志聪</h3>
+                  <h4>我学习JS的心愿是，先将容易上手的JS学透，然后应用在自己的领域里，如果可能，转行编程行业，把自己的想法用编程的方式展现出来，这将会是一件非常有趣的事</h4>
+                </div>
+        </div>
+        <div class="face two">
+                <h2 style="position:relative;text-align:center;top:150px;color:white">超厉害的JS深圳小分队</h2>
+                <h3 style="position:relative;text-align:center;top:160px;color:white">通过「⇦ ⇧ ⇨ ⇩」来控制立方体旋转！</h3>
+        </div>
+        <div class="face three">
+            <img src="http://oon3erbcp.bkt.clouddn.com/liuzc.jpg"  height="98%" width="98%">
+            <div class="carousel-caption">
+                <h3>刘争春</h3>
+                <h5>被徐老师的超低价给吸引进来了，本来学的是python数据科学，哈哈哈！！！</h5>
+            </div>
+        </div>
+        <div class="face four">
+            <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fichri1aobj30hs0bumxh.jpg"  height="100%" width="100%">
+            <div class="carousel-caption">
+                <h3>唐剑锋</h3>
+                <h5>学习了全栈营后，觉得还要提高，所以来学，希望能学到东西</h5>
+            </div>
+        </div>
+        <div class="face five">
+            <img src="http://oon3erbcp.bkt.clouddn.com/avata%28qiujingyu%29.png"  height="98%" width="98%">
+            <div class="carousel-caption">
+                  <h3>丘竟钰</h3>
+                  <h5>希望参加这个课程能让自己建立的网站更加生动活泼</h5>
+            </div>
+        </div>
+        <div class="face six">
+            <img src="http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"  height="100%" width="100%">
+            <div class="carousel-caption">
+                <h3>hitchhacker</h3>
+                <p>搞定JS.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--这里是导航窗口-->
+  <div class="index-content">
     <div class="container">
-      <h1>JavaScript深圳小分队编程入门</h1>
-      <h5>授课老师：徐高阳</h5>
-      <h5>
-        <a href="./heartwords.html" class="glyphicon glyphicon-heart" target="_blank">同学们的心里话</a>
-      </h5>
+      <a href="https://zh.wikipedia.org/wiki/JavaScript">
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/1_tTH6RiAXk/maxresdefault.jpg">
+                <h4>JavaScript简介</h4>
+                <p>要学习JavaScript，首先你要知道它是什么？能做什么？然后，你就去用它吧！</p>
+                <a href="https://zh.wikipedia.org/wiki/JavaScript" class="blue-button">Read More</a>
+            </div>
+        </div>
+      </a>
+      <a href="http://www.w3school.com.cn/js/">
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="https://ws1.sinaimg.cn/large/006tNc79gy1fj6fu5zm2uj30zk0k00t5.jpg">
+                <h4>学习资源</h4>
+                <p>JavaScript是最适合初学者的语言之一，现在就可以点开下面的链接开始学习吧！</p>
+                <a href="http://www.w3school.com.cn/js/" class="blue-button">Read More</a>
+            </div>
+        </div>
+      </a>
+      <a href="https://web.xinshengdaxue.com/home/lessons">
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fjeacotp7kj30zk0k0wf6.jpg">
+                <h4>进阶课程</h4>
+                <p>还想继续提高的同学可以报新生大学的JavaScript课程哦！超级推荐徐高阳老师的课哦！</p>
+                <a href="https://web.xinshengdaxue.com/home/lessons" class="blue-button">Read More</a>
+            </div>
+        </div>
+      </a>
     </div>
   </div>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
+      <div class="col-md-12 ">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                    <h3 class="panel-title text-center">说话墙😁</h3>
+            </div>
+            <div class ="panel-body" id="all_students_datas" style="overflow: auto;height:1000px">
+                <div id="columns">
+                    <div class="words-pannel" v-for="item in all_students_data">
+                        <figure>
+                            <div class="students_words">
+                                {{item.words}}
+                            </div>
+                            <hr>
+                            <div class="name_and_avastar">
+                                {{ item.name }}
+                                <img class="ui avatar image" v-bind:src="item.avatar" alt="...">
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+          <!--对老师说话-->
+        <div class="col-md-4">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h3>hitchhacker</h3>
-        <p>搞定JS.</p>
-      </div>
+          <div class="panel panel-default ">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">还有话想跟老师说？</h3>
+            </div>
+            <div class="panel-body">
+            <form>
+
+                <div class="form-group">
+                    <label for="name">个人姓名</label>
+                    <input v-model="nameString"  type="name" class="form-control" id="name" placeholder="请输入你的姓名">
+                </div>
+                <div class="form-group">
+                    <label for="account">新大账号</label>
+                <input v-model="accountString" type="account" class="form-control" id="account" placeholder="请输入新大注册手机号码或邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="content">想说的话</label>
+                    <input v-model="contentString" type="content" class="form-control" id="content" placeholder="请输入你想对徐老师说的话">
+                </div>
+
+                <div class="btn btn-primary" v-on:click="sendData">提交发送</div>
+              </div>
+            </form>
+            </div>
+          </div>
+
+
+              <!--小游戏-->
+        <div class="col-md-4">
+          <div class="panel panel-default ">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">小游戏</h3>
+            </div>
+            <div class="panel-body">
+              <div id="chess_game">
+                <div class="square" id="1-1" v-on:click="newStep"></div>
+                <div class="square" id="1-2" v-on:click="newStep"></div>
+                <div class="square" id="1-3" v-on:click="newStep"></div>
+                <div class="square" id="2-1" v-on:click="newStep"></div>
+                <div class="square" id="2-2" v-on:click="newStep"></div>
+                <div class="square" id="2-3" v-on:click="newStep"></div>
+                <div class="square" id="3-1" v-on:click="newStep"></div>
+                <div class="square" id="3-2" v-on:click="newStep"></div>
+                <div class="square" id="3-3" v-on:click="newStep"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
-    <div class="item">
-      <img src="https://avatars0.githubusercontent.com/u/30835292?v=4&u=0828fdc04493f465d3a4ee0957fb8397e9c0d940&s=400" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>刁志聪</h3>
-        <p>我学习JS的心愿是，先将容易上手的JS学透，然后应用在自己的领域里，如果可能，转行编程行业，把自己的想法用编程的方式展现出来，这将会是一件非常有趣的事</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="http://oon3erbcp.bkt.clouddn.com/liuzc.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>刘争春</h3>
-        <p>被徐老师的超低价给吸引进来了，本来学的是python数据科学，哈哈哈！！！</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fichri1aobj30hs0bumxh.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>唐剑锋</h3>
-        <p>学习了全栈营后，觉得还要提高，所以来学，希望能学到东西</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="http://oon3erbcp.bkt.clouddn.com/avata%28qiujingyu%29.png" alt="New York">
-      <div class="carousel-caption">
-        <h3>丘竟钰</h3>
-        <p>希望参加这个课程能让自己建立的网站更加生动活泼</p>
-      </div>
-    </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  <div class="container">
-    <div class="envato-animate">
-      <span class="envato-balloon">J</span>
-      <span class="envato-balloon">S</span>
-      <span class="envato-balloon">深</span>
-      <span class="envato-balloon">圳</span>
-      <span class="envato-balloon">小</span>
-      <span class="envato-balloon">分</span>
-      <span class="envato-balloon">队</span>
-    </div>
-    <div class="col-md-12 ">
+  <script src="public/experiment.js"></script>
+  <script>
 
-      <div id="app" class="col-md-12">
-          <h3 class="glyphicon glyphicon-volume-up">对老师说话</h3>
-           <div><input v-model ="name" class="form-control"  placeholder="填入你的姓名"></div>
-           <div><input v-model ="account" class="form-control"  placeholder="填入你的新大帐户"></div>
-           <div><input v-model ="content" class="form-control"  placeholder="填入你想对老师说的话"></div>
-           <!--<div> <input v-model ="file" name="file" type="file" accept="image/png,image/gif,image/jpeg" on-change="update"/></div>  -->
-           <div><button v-on:click="sendData">提交给老师</button> </div>
-           <br>
-      </div>
-    </div>
-    <br><br><br>
-    <hr>
-    <div class="col-md-6">
-      <div class="panel panel-default">
+          //axios部分
+          var all_students_data=Array()
+          axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+              .then(function (response) {
+                  main_display(response.data.words);
 
-        <div class="panel-heading">
-          <h3 class="panel-title">作业心得</h3>
-        </div>
-        <div class="panel-body">
-          <li class="list-group-item">
-            <a href="https://github.com/qiuyixiu/getting-started-with-javascript/blob/master/homework/lesson7/qiujingyu.md">
-              第七课作业
-            </a>
+              })
+              .catch(function (error) {
+                  console.log(error);
+              });
 
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="panel panel-default">
+          //vue部分
+          function main_display(all_data)
+          {
 
-        <div class="panel-heading">
-          <h3 class="panel-title">学习资料</h3>
-        </div>
-        <div class="panel-body">
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%89%E8%8A%82.pdf">
-            【PPT】第三节课
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%BA%8C%E8%8A%82.pdf">
-            【PPT】第二节课
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F.md">
-            【第二节知识点】定义变量
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/ppt/JavaScript%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E7%AC%AC%E4%B8%80%E8%8A%82.pdf">
-            【PPT】第一节课
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8Git">
-            【课前预习】第一次使用Git
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/wiki/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request">
-            【课前预习】第一次pull request
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E4%BB%8E%E4%B8%BB%E9%A1%B9%E7%9B%AE%E6%9B%B4%E6%96%B0fork%E7%9A%84%E9%A1%B9%E7%9B%AE.md">
-            如何更新从主项目fork过来的项目@张丽娜
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Git%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0.md">
-            Git实战笔记@由何伟同学贡献
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%20push%E5%92%8Cpr%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md">
-            如何查看git push和pr的提交结果
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1pull-request%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.md">
-            【课前预习】第一次pull request错误汇总
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgit%E7%9A%84%E6%8F%90%E4%BA%A4%E7%BB%93%E6%9E%9C.md">
-            如何查看自己的提交状态？
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E5%AE%89%E8%A3%85nvm.md">
-            【课前准备】安装NVM
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8JSON.md">
-            第一次使用JSON
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/MAC-Terminal-command-list.md">
-            MAC Terminal常用指令
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://github.com/xugy0926/getting-started-with-javascript/blob/master/topics/Win-Command-list.md">
-            Win CMD常用指令
-            </a>
-          </li>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main-footer">
-    <div class="container">
-      <div class="col-md-2">
-        学习资源链接
-      </div>
-      <div class="col-md-3">
-          <a href="https://developer.mozilla.org/zh-CN/",  target="_blank") %>
-            Mozilla 开发者网络
-          </a>
-      </div>
-      <div class="col-md-3">
-          <a href="http://www.bootcss.com/",  target="_blank") %>
-            Bootstrap中文网
-          </a>
-      </div>
-      <div class="col-md-4">
-          <a href="http://www.w3school.com.cn/",  target="_blank") %>
-            w3school
-          </a>
-      </div>
-  </div>
-</div>
-</div>
+              var all_students_datas=new Vue({
+                  el:'#all_students_datas',
+                  data:{
+                    name:'',
+                    account:'',
+                    content:'',
+                      all_students_data:all_data,
+                      cube_students:all_data.slice(0,5)
+                      //studentA_avatar:"https://ws3.sinaimg.cn/large/006tNc79ly1fig6fhvtbvj30zk0zkn4f.jpg"
+                  },
+                  methods:{
+                    sendData: function() {
+                      axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
+                      { name:app.name,
+                        account:app.account,
+                        content:app.content
+                      })
+                        .then(function(response){
+                          alert(response.data.code);
+                        })
+                        .catch(function(error){
+                          console.log(error);
+                        });
+                    }
+                  }
+              })
+
+              var chess_game=new Vue({
+                  el:"#chess_game",
+                  data:{
+                      game_position:[[0,0,0,],[0,0,0,],[0,0,0]],
+                      game_end:false
+                  },
+                  methods:{
+                      newStep: function(event) {
+                          var i = event.currentTarget.id.split('-')[0]-1;
+                          var j = event.target.id.split('-')[1]-1;
+                          if(chess_game.game_position[i][j]!=0){
+                              alert('此处不能下棋');
+                          }else{
+                              if(chess_game.game_end==false){
+                                  chess_game.game_position[i][j]=1;
+                                  chess_game.redraw(chess_game.whose_winner);
+                              }
+                              if(chess_game.game_end==false){
+                                  chess_game.computer_step();
+                                  chess_game.redraw(chess_game.whose_winner);
+                              }
+
+                          }
+
+                      },
+                      redraw:function(callback){
+                          for(var i=1;i<4;i++){
+                          for(var j=1;j<4;j++){
+                            var  a_man= document.getElementById(i+'-'+j);
+                            switch (chess_game.game_position[i-1][j-1])
+                            {
+                              case 1:
+                                a_man.innerHTML = 'O';
+                                a_man.style.color = 'lightblue';
+                                break;
+                              case -1:
+                                          a_man.innerHTML = "X";
+                                a_man.style.color = '#ADFF2F';
+                                break;
+                              default:
+                                break;
+                            }
+                          }
+                          }
+                          callback();
+                      },
+                      three_in_line:function(role){
+                          //行上有获胜吗？
+                          for(var i=0;i<3;i++){
+                              chess_sum=0;
+                              for(var j=0;j<3;j++){
+                            chess_sum += chess_game.game_position[i][j];
+                              }
+                              if(chess_sum==role*3){
+                                  return 1;
+                              }
+                          }
+                          //列上有获胜吗？
+                          for(var j=0;j<3;j++){
+                              chess_sum=0;
+                              for(var i=0;i<3;i++){
+                                  chess_sum += chess_game.game_position[i][j];
+                              }
+                              if(chess_sum==role*3){
+                                  return 1;
+                              }
+                          }
+                          //斜对角上有获胜吗？
+                          if(chess_game.game_position[0][0]+chess_game.game_position[1][1]+chess_game.game_position[2][2]==role*3)
+                          {
+                              return 1;
+                          }
+                          if(chess_game.game_position[0][2]+chess_game.game_position[1][1]+chess_game.game_position[2][0]==role*3)
+                          {
+                              return 1;
+
+                          }
+                          //如果没获胜,return 0；
+                          return 0;
+                      },
+                      whose_winner:function(){
+                          if(chess_game.three_in_line(1)==1){
+                              chess_game.game_end=true;
+                              alert("You win!");
+                          }else if(chess_game.three_in_line(-1)==1){
+                              chess_game.game_end=true;
+                              alert("You lose!");
+                          }
+                      },
+                      computer_step:function(){
+                          var put_the_chess=false;
+                          while(put_the_chess==false){
+                              var i=Math.floor(Math.random()*3);
+                              var j=Math.floor(Math.random()*3);
+                              console.log(i);
+                              console.log(j);
+                              if(chess_game.game_position[i][j]!=0){
+                              }else{
+                                  chess_game.game_position[i][j]=-1;
+                                  put_the_chess=true;
+                              }
+
+                          }
+                      }
+                  }
+
+              })
+
+         }
+  </script>
 </body>
 </html>
-<script>
-  // vue官网： https://cn.vuejs.org/v2/guide/
-  // 初始化Vue
-
-  var app = new Vue({
-    el: '#app',   // #app 和html中div#id的 app 对应
-    data: {
-      name:'',
-      account:'',
-      content:'',
-      wordsList: []  // 变量wordsList可以在html使用
-    },
-    methods: {
-      fetchData: function() {
-        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
-          .then(function (response) {
-            app.wordsList = response.data.words;
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      },
-      sendData: function() {
-        axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
-        { name:app.name,
-          account:app.account,
-          content:app.content
-        })
-          .then(function(response){
-            alert(response.data.code);
-          })
-          .catch(function(error){
-            console.log(error);
-          });
-      }
-    }
-  });
-
-  app.fetchData();
-</script>
+<!--JS代码部分-->
