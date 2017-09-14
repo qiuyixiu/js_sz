@@ -128,25 +128,26 @@
             <div class="panel-heading">
               <h3 class="panel-title text-center">还有话想跟老师说？</h3>
             </div>
-            <div class="panel-body">
-            <form>
-                <div class="form-group">
-                    <label for="name">个人姓名</label>
-                    <input v-model="nameString"  type="name" class="form-control" id="name" placeholder="请输入你的姓名">
-                </div>
-                <div class="form-group">
-                    <label for="account">新大账号</label>
-                <input v-model="accountString" type="account" class="form-control" id="account" placeholder="请输入新大注册手机号码或邮箱">
-                </div>
-                <div class="form-group">
-                    <label for="content">想说的话</label>
-                    <input v-model="contentString" type="content" class="form-control" id="content" placeholder="请输入你想对徐老师说的话">
-                </div>
-                <div class="btn btn-primary" v-on:click="sendData">提交发送</div>
-              </div>
-            </form>
+            <div class="panel-body" id="app">
+              <form>
+                  <div class="form-group">
+                      <label for="name">个人姓名</label>
+                      <input v-model="name"  type="name" class="form-control" id="name" placeholder="请输入你的姓名">
+                  </div>
+                  <div class="form-group">
+                      <label for="account">新大账号</label>
+                  <input v-model="account" type="account" class="form-control" id="account" placeholder="请输入新大注册手机号码或邮箱">
+                  </div>
+                  <div class="form-group">
+                      <label for="content">想说的话</label>
+                      <input v-model="content" type="content" class="form-control" id="content" placeholder="请输入你想对徐老师说的话">
+                  </div>
+                  <div class="btn btn-primary" v-on:click="sendData">提交发送</div>
+
+              </form>
             </div>
           </div>
+        </div>
 
 
               <!--小游戏-->
@@ -175,7 +176,42 @@
   </div>
 
   <script src="public/experiment.js"></script>
+  <script>
+  var app = new Vue({
+    el: '#app',   // #app 和html中div#id的 app 对应
+    data: {
+      name:'',
+      account:'',
+      content:'',
+      wordsList: []  // 变量wordsList可以在html使用
+    },
+    methods: {
+      fetchData: function() {
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+          .then(function (response) {
+            app.wordsList = response.data.words;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      },
+      sendData: function() {
+        axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
+        { name:app.name,
+          account:app.account,
+          content:app.content
+        })
+          .then(function(response){
+            alert(response.data.code);
+          })
+          .catch(function(error){
+            console.log(error);
+          });
+      }
+    }
+  });
 
+  </script>
   <script>
 
           //axios部分
